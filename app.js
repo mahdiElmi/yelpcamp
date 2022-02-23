@@ -148,14 +148,16 @@ app.get("/", (req, res) => {
   res.render('home')
 })
 
+const port = process.env.PORT || 3000
 
-app.listen(3000, () => {
-  console.log("Serving on port 3000")
+app.listen(port, () => {
+  console.log(`Serving on port ${port}`)
 })
 
 app.all("*", (req, res, next) => {
   next(new ExpressError("Page not found", 400))
 })
+
 
 app.use((err, req, res, next) => {
   const { status = 500 } = err;
