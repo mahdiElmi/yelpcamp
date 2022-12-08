@@ -1,44 +1,76 @@
 <% layout("layouts/boilerplate") %>
-<div class="row">
+<div
+  class="row d-flex w-md-50 flex-column align-items-center justify-cotent-center bg-primary bg-gradient bg-opacity-10 rounded-lg w-fit m-auto p-2 py-4 border border-3 shadow-lg border-white"
+>
   <h1 class="text-center">New Campground</h1>
-  <div class="col-md-6 offset-md-3">
-    <form action="/campgrounds" method="post" class="validated-form" novalidate enctype="multipart/form-data">
+  <div class="">
+    <form
+      action="/campgrounds"
+      method="post"
+      class="validated-form"
+      novalidate
+      enctype="multipart/form-data"
+    >
       <div class="mb-3">
         <label class="form-label" for="title">Title</label>
-        <input class="form-control" type="text" name="campground[title]" id="title" required />
-        <div class="valid-feedback">
-          Looks good!
-        </div>
+        <input
+          class="form-control"
+          type="text"
+          name="campground[title]"
+          id="title"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
         <label class="form-label" for="location">Location</label>
-        <input class="form-control" type="text" name="campground[location]" id="location" required />
-        <div class="valid-feedback">
-          Looks good!
-        </div>
+        <input
+          class="form-control"
+          type="text"
+          name="campground[location]"
+          id="location"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
         <label class="form-label" for="price">Price</label>
         <div class="input-group">
           <span class="input-group-text">$</span>
-          <input type="text" class="form-control" name="campground[price]" id="price" placeholder="0.00" aria-label="Amount (to the nearest dollar)" required />
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <input
+            type="text"
+            class="form-control"
+            name="campground[price]"
+            id="price"
+            placeholder="0.00"
+            aria-label="Amount (to the nearest dollar)"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
         </div>
       </div>
       <div class="mb-3">
         <label class="form-label" for="description">Description</label>
-        <textarea class="form-control" type="text" name="campground[description]" id="description" required></textarea>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
+        <textarea
+          class="form-control"
+          type="text"
+          name="campground[description]"
+          id="description"
+          required
+        ></textarea>
+        <div class="valid-feedback">Looks good!</div>
       </div>
       <div class="mb-3">
-        <label class="form-label" for="image">Image</label><br>
-        <input class="form-control" type="file" name="image" id="image" multiple>
+        <label class="form-label" for="image">Image</label><br />
+        <input
+          class="form-control"
+          type="file"
+          name="image"
+          id="image"
+          multiple
+        />
         <div class="valid-feedback">
-          Looks good!
+          Looks good! (It might take a while to upload your image)
         </div>
       </div>
       <div class="mb-3 d-grid gap-2">
