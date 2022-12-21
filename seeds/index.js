@@ -32,7 +32,7 @@ const seedDB = async () => {
       title: `${sample(descriptors)} ${sample(places)}`,
       images: [
         {
-          url: "https://res.cloudinary.com/dicfw8ec0/image/upload/v1644855422/YelpCamp/atr4bepe8gfd7q9ktuaf.jpg",
+          url: "https://res.cloudinary.com/dicfw8ec0/image/upload/c_crop,h_1280,w_1920/v1644855422/YelpCamp/atr4bepe8gfd7q9ktuaf.jpg",
           filename: "YelpCamp/atr4bepe8gfd7q9ktuaf",
         },
         {
